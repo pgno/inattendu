@@ -1,2 +1,2 @@
-gem "minima"
+#gem "minima"
 gem "jekyll-seo-tag"
