@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Entreprise contributive de biens communs
 
 social_sites:
-  twitter: jekyllrb
-  github:  jekyll
+  #twitter: jekyllrb
+  github:  pgno
   #dribbble: jekyll
   #facebook: jekyll
   #flickr: jekyll

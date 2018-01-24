@@ -1,0 +1,52 @@
+$rot : -45deg;
+
+
+.home {
+	.excerpt {
+		position: absolute;
+		top: -170px;
+		width: 550px;
+    	margin: 0 calc(50% - 275px);
+
+		.content {
+			opacity: 0;
+			transition : opacity 0.5s ease;
+			p {
+				@include relative-font-size(0.9);
+			}
+		}
+
+		.icon {
+			width: 29px;
+			height: 29px;
+			background : url('images/plus.png') no-repeat;
+			margin: 4rem auto 1rem;
+
+			transition:transform .3s;
+
+		}
+
+	}
+
+	.excerpt:hover {
+		.content {
+			opacity: 1;
+		}
+
+		.icon {
+			transform:rotate($rot);
+		}
+	}
+
+	.logo {
+    	background: url(images/background.png) no-repeat;
+    	width: 100%;
+    	text-align: center;
+		position: relative;
+    	img {
+    		width: 240px;
+    		margin: 6rem auto 1rem;
+    	}
+	}
+
+}

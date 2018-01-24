@@ -11,6 +11,8 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
+$heading-font-family : 'Abel', sans-serif;
+
 $spacing-unit:     30px !default;
 
 $text-color:       #000 !default;
@@ -24,7 +26,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    860px !default;
+$content-width:    1200px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        860px !default;
@@ -49,5 +51,8 @@ $on-laptop:        860px !default;
 // Import partials.
 @import
   "inattendu/base",
-  "inattendu/layout"
+  "inattendu/grid",
+  "inattendu/navigation",
+  "inattendu/footer",
+  "inattendu/home"
 ;

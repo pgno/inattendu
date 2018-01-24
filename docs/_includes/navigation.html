@@ -1,0 +1,17 @@
+<div class="nav section">
+	<ul>
+		{% for item in site.data.navigation.items %}
+		<li>
+			<a href="{{ item.url }}">{{ item.title }}</a>
+			{% if page.layout != 'home' and item.subitems != null %}
+			<ul>
+				{% for subitem in item.subitems %}
+					<li><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</li>
+		
+		{% endfor %}
+	</ul>
+</div>
