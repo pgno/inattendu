@@ -2,11 +2,11 @@
 	<ul>
 		{% for item in site.data.navigation.items %}
 		<li>
-			<a href="{{ item.url }}">{{ item.title }}</a>
+			<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
 			{% if page.layout != 'home' and item.subitems != null %}
 			<ul>
 				{% for subitem in item.subitems %}
-					<li><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+					<li><a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a></li>
 				{% endfor %}
 			</ul>
 			{% endif %}
